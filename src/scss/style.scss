@@ -1,6 +1,11 @@
-$font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+@tailwind base;
 
-@import "~bootstrap/scss/bootstrap";
+@tailwind components;
+
+@tailwind utilities;
+
+
+$font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
 
 @font-face {
   font-family: "Roboto";

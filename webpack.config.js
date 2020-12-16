@@ -71,7 +71,8 @@ const config = {
                       }
                     }
                   ]
-                })
+                }),
+                require("tailwindcss")()
               ]
             }
           },
@@ -93,10 +94,6 @@ const config = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "./css/style.bundle.css"
-    }),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
     }),
     new CopyWebpackPlugin([
       {
