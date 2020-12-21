@@ -24,7 +24,7 @@ function generateHtmlPlugins(templateDir) {
 const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
 const config = {
-  entry: ["./src/js/index.js", "./src/scss/style.scss"],
+  entry: ["./src/js/index.js", "./src/sass/style.sass"],
   output: {
     filename: "./js/bundle.js"
   },
@@ -42,7 +42,7 @@ const config = {
     rules: [
       {
         test: /\.(sass|scss)$/,
-        include: path.resolve(__dirname, "src/scss"),
+        include: path.resolve(__dirname, "src/sass"),
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
